@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+var kowsi={
+  rno:1001,
+  sname:"kowsalya",
+  mark:12,
+  rank:37,
+  grade:"super",
+  location:"nandhanur",
+  issingle:true
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data= {kowsi}/>
   </React.StrictMode>
 );
 
