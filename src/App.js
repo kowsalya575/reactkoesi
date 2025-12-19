@@ -1,28 +1,40 @@
-import logo from './logo.svg';
- import './App.css';
+import React from "react"
 
- function App() {
-  return (
-    <div className="App">
-     <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           Edit <code>src/App.js</code> and save to reload.
-         </p>
-         <a
-           className="App-link"
-        href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  ); 
+ class Parent extends React.Component
+ {
+   render()
+   {
+     return(<>
+    <h1>This is parent Class</h1>
+    <h1>This is parent Class</h1>
+    <h1>This is parent Class</h1>
+     <h1>This is parent Class</h1>
+    
+     </>)
+
+  }
 }
+ class App extends Parent {
+  render()
+  {
+     return(<>
 
-export default App
+      <Parent/>
+        <h2>Welcome to React</h2>
+       <h2>Hello</h2>
+       <h2>Welcome</h2>
+      <h2>kowsalya</h2>
+        <h2>You All</h2>
+        <p>Amet duis veniam exercitation aliquip eiusmod. Irure elit ex esse sunt proident sunt in. Laboris excepteur ea anim anim laborum. Adipisicing id consequat do ad consequat dolor Lorem. Labore aliqua officia ullamco cillum nisi tempor sunt ipsum cupidatat.
+
+ Laborum aute ad magna nostrud amet reprehenderit enim voluptate aliquip esse nisi. Consectetur ullamco ut in consequat magna adipisicing sunt cupidatat commodo. Ullamco irure pariatur nisi velit esse elit. Esse velit elit aute nostrud nostrud mollit sit in aliquip Lorem id tempor reprehenderit dolore.
+ -</p>
+        </>)
+       }
+ }
+ export default App
+
+
 
 
 /*import React from "react";
