@@ -1,4 +1,22 @@
-import React from 'react';
+import parse from 'html-react-parser'
+function App(props)
+{
+  var ans=""
+  for (var s in props.data)
+  {
+    ans=ans+`<li>${s} = ${props.data[s]}</li>`
+    console.log(s)
+  }
+  return(
+    <>
+    {parse("<ol>"+ans+"</ol>")}
+    </>
+  )
+}
+export default App
+
+
+/*import React from 'react';
 import parse from 'html-react-parser'
 class App extends React.Component
 {
