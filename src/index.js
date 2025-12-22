@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 var kowsi={
   rno:1001,
   sname:"kowsalya",
-  mark:12,
+  mark:[12,10,0,-5,44],
   rank:37,
   grade:"super",
   location:"nandhanur",
@@ -16,6 +16,12 @@ var kowsi={
   height:"155cm",
   phone:7806872575,
   dateofbirth: "30.12.2002",
+  hobbies:{
+           hob1:"mobile phone",
+           hob2:"book reading",
+           hob3:"shopping",
+           hop4:"movie watching"
+  }
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

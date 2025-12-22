@@ -1,4 +1,23 @@
-import parse from 'html-react-parser'
+function App(props)
+{
+  var a=props.data.rno
+  var b=props.data.sname
+  var c=props.data.issingle
+  var d=props.data.mark
+  var e=props.data.mark
+  return(<>
+  <h3>Type of rno:{typeof(a)}</h3>
+  <h3>Type of sname:{typeof(b)}</h3>
+  <h3>Type of martial status:{typeof(c)}</h3>
+  <h3>Type of marks:{typeof(d)}</h3>
+  <h3>{Array.isArray(d)?"it is array":"it is object json"}</h3>
+  <h3>{Array.isArray(e)?"it is array":"it is object json"}</h3>
+  </>)
+}
+export default App
+
+
+/*import parse from 'html-react-parser'
 function App(props)
 {
   var ans=""
@@ -14,8 +33,6 @@ function App(props)
   )
 }
 export default App
-
-
 /*import React from 'react';
 import parse from 'html-react-parser'
 class App extends React.Component
