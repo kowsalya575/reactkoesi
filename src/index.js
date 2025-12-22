@@ -11,7 +11,11 @@ var kowsi={
   rank:37,
   grade:"super",
   location:"nandhanur",
-  issingle:true
+  issingle:true,
+  aadhar:223344557799,
+  height:"155cm",
+  phone:7806872575,
+  dateofbirth: "30.12.2002",
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

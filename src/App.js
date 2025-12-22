@@ -1,43 +1,37 @@
-import React from "react"
+import React from 'react';
+import parse from 'html-react-parser'
+class App extends React.Component
+{
+  constructor(props)
+  {
+    var ans=""
+    super(props)
+    for(var s in props.data)
+    { 
+      ans=ans+`<li>${s} = ${props.data[s]}<br></br></li>`
+      console.log(s)
+    } 
+    //var h="<ol>"
+    this.state={
+      //res: h+ans
+      res:"<ol type='I'>"+ans+"</ol>"
 
- class Parent extends React.Component
- {
-   render()
-   {
-     return(<>
-    <h1>This is parent Class</h1>
-    <h1>This is parent Class</h1>
-    <h1>This is parent Class</h1>
-     <h1>This is parent Class</h1>
-    
-     </>)
-
+    }
   }
-}
- class App extends Parent {
   render()
   {
-     return(<>
-
-      <Parent/>
-        <h2>Welcome to React</h2>
-       <h2>Hello</h2>
-       <h2>Welcome</h2>
-      <h2>kowsalya</h2>
-        <h2>You All</h2>
-        <p>Amet duis veniam exercitation aliquip eiusmod. Irure elit ex esse sunt proident sunt in. Laboris excepteur ea anim anim laborum. Adipisicing id consequat do ad consequat dolor Lorem. Labore aliqua officia ullamco cillum nisi tempor sunt ipsum cupidatat.
-
- Laborum aute ad magna nostrud amet reprehenderit enim voluptate aliquip esse nisi. Consectetur ullamco ut in consequat magna adipisicing sunt cupidatat commodo. Ullamco irure pariatur nisi velit esse elit. Esse velit elit aute nostrud nostrud mollit sit in aliquip Lorem id tempor reprehenderit dolore.
- -</p>
-        </>)
-       }
- }
- export default App
+    return (<>
+    <h1>combine react state +props</h1>
+    {parse(this.state.res)}
+    <div id="res"></div>
+    </>
+    )
+  }
+}
+export default App
 
 
-
-
-/*import React from "react";
+/*import React from "react"
 class App extends React.Component
 {
   constructor(props)
