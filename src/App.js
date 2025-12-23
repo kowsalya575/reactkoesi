@@ -1,4 +1,30 @@
-function App(props)
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <input type="text" placeholder='enter user name'></input><br></br>
+      <input type="text" placeholder='enter passward'></input><br></br>
+      <input type="number" placeholder='enter accno'></input><br></br>
+      <input type="email" placeholder='Enter Email'></input><br></br>
+      <label>Select Gender</label>
+      <input type="radio"></input>Male
+      <input type="radio"></input>female
+      <input type="radio"></input>others
+      <br></br>
+      <button><b><s>Clickme</s></b></button>
+      <input type="submit"></input>
+      <input type="button" value="clickme"></input>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+/*function App(props)
 {
   var a=props.data.rno
   var b=props.data.sname
@@ -15,8 +41,6 @@ function App(props)
   </>)
 }
 export default App
-
-
 /*import parse from 'html-react-parser'
 function App(props)
 {
